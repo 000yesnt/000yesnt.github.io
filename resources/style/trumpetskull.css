@@ -1,0 +1,10 @@
+body { /* Overrides core.css, i think. */
+	background-image: url("/resources/images/honk.jpg");
+	background-size: 200px;
+}
+.perfect-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
