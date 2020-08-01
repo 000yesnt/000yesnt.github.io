@@ -1,0 +1,15 @@
+#body_core {
+  background-color: lightgray;
+}
+.center {
+	text-align: center;
+}
+.imgcenter { /* this does not work! idfk how to fix it */
+		vertical-align: middle; 
+}
+.center-title {
+	text-align: center;
+	font-weight: bold;
+	border-bottom-style: dotted;
+	border-width: 1px;
+}
