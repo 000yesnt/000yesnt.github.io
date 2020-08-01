@@ -5,7 +5,8 @@
 	text-align: center;
 }
 .imgcenter { /* this does not work! idfk how to fix it */
-		vertical-align: middle; 
+	text-align: center; 
+	display: block;
 }
 .center-title {
 	text-align: center;
@@ -13,3 +14,7 @@
 	border-bottom-style: dotted;
 	border-width: 1px;
 }
+/* doesnt work idfk why either
+.no-bold {
+	font-weight: normal;
+} */
