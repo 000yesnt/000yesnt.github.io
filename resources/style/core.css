@@ -17,7 +17,15 @@
 	border-bottom-style: dotted;
 	border-width: 1px;
 }
-/* doesnt work idfk why either
-.no-bold {
+.center-title-noborder {
+	text-align: center;
+	font-weight: bold;
+}
+.bottom-border {
+	border-bottom-style: dotted;
+	border-width: 1px;
+}
+
+span {
 	font-weight: normal;
-} */
+}
