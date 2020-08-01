@@ -1,10 +1,13 @@
+* {
+	font-family: Calibri, sans-serif;
+}
 #body_core {
   background-color: lightgray;
 }
 .center {
 	text-align: center;
 }
-.imgcenter { /* this does not work! idfk how to fix it */
+.piccenter { /* this does not work! idfk how to fix it */
 	text-align: center; 
 	display: block;
 }
