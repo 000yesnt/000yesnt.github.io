@@ -3,6 +3,7 @@
 	<head>
 		<title>dumb repo</title>
 		<link rel="stylesheet" type="text/css" href="/resources/style/core.css">
+		<script src="/resources/script/core.js"></script>
 		<meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="repo"/>
         <meta name="twitter:description" content="placeholder dadadawdadawfafsdgsgaaf"/>
@@ -20,14 +21,25 @@
 		<h1 class="center-title"> </h1>
 		
 		<h2 class="center">hi, my name's yesnt</h3>
-		<!-- <h3 class="center"><span><i>why?</i> because <b>fuck you</b> that's why </span></h3> That's mean! -->
 		
-		<h2 class="center"> I code shit and game when I'm bored, and I have a cute cat. <span>those are literally the only two intresting things about me</span></h2>
+		<h2 class="center"> I code<span style="opacity:0.5">,</span>shit and game when I'm bored, and I have a cute cat. <br>
+		<span>(those are literally the only two intresting things about me)</span></h2>
 		
-		<div class="center">
-			<img src="resources/images/mycat.jpg" width="50%" height="50%" alt="Kitty"/>
+		<p class="center">If the image below takes a long time to load, don't worry; it's actually massive and I forgot to downscale it.<br>
+		If you want to hide the cat, simply double click it. You can make it appear later with a button.</p>
+		
+		<button onclick="HideCat()" id="cat_toggle">Hide the kitty! (or double click it)</button>
+		
+		<div class="center-title" id="cat">
+			<img src="resources/images/mycat.jpg" width="50%" height="50%" alt="Kitty" ondblclick="HideCat()"/>
 		</div>
-		<p> sorry if the website is a mess, I'm horrible at this</p>
-		<p>If certain parts of the page are broken, press CTRL + F5 to reload your CSS cache.</p>
+		
+		<h1 style="display: inline">Some projects that I made: </h1><h3 style="display: inline; font-weight: normal">
+		<a href="https://github.com/000yesnt/Archivebot">Discord bot that stores messages in a text file</a> | 
+		<a href="https://github.com/000yesnt/testgame">Some shitty game thing</a></h3>
+		
+		<br>
+		<p class="center"> sorry if the website is a mess, I'm horrible at this<br>
+		If certain parts of the page are broken, press CTRL + F5 to reload your CSS cache.</p>
 	</body>
 <html>
