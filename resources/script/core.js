@@ -1,5 +1,6 @@
 window.onload = function() {
 	//document.getElementById("cat_toggle").style.display = "block";
+	HideCat();
 }
 function HideButton() {
 	var b = document.getElementById("cat_toggle");

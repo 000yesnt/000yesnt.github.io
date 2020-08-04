@@ -7,13 +7,18 @@
 .center {
 	text-align: center;
 }
-.piccenter { /* this does not work! idfk how to fix it */
+.piccenter { /* Unused, broken */
 	text-align: center; 
 	display: block;
 }
 .center-title {
 	text-align: center;
 	font-weight: bold;
+	border-bottom-style: dotted;
+	border-width: 1px;
+}
+.center-title-nobold { /* Unused */
+	text-align: center;
 	border-bottom-style: dotted;
 	border-width: 1px;
 }
