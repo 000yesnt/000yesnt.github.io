@@ -31,6 +31,17 @@
 	border-width: 1px;
 }
 
-span {
+.mod-title h1.title-changed span {
+	content: "The best website in the world!";
+}
+.mod-title:hover h1.title-changed span {
+	display: none;
+}
+
+.mod-title:hover h1.title-changed:after {
+	content: "The worst website in the world!";
+}
+
+span#normal {
 	font-weight: normal;
 }
