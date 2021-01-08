@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>dumb site</title>
+		<title>000yesnt.github.io</title>
 		
 		<!-- Link our core css file -->
 		<link rel="stylesheet" type="text/css" href="/resources/style/core.css">
 		
-		<!-- Add jQuery and our core js file -->
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<!-- (don't) Add jQuery and our core js file -->
+		<!-- script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
 		<script src="/resources/script/core.js"></script>
+		<script src="/resources/script/core_async.js" async></script>
 		
 		<!-- Metadata shit: Twitter -->
 		<meta name="twitter:card" content="summary" />
@@ -22,13 +23,21 @@
         <meta property="og:description" content="cool and epic"/>
         <meta property="og:image" content="https://github.com/000yesnt/SiteContent/blob/master/soft.jpg?raw=true"/>
 		
+		<!-- Metadata shit: GNU Terry Pratchett -->
+		<meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="/resources/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="/resources/favicon.ico" type="image/x-icon">
+
+		<!-- Site caching throws me off hard, so I'll just: -->
+		<meta http-equiv="Cache-Control" content="max-age=3600"/>
+		<meta http-equiv="Cache-Control" content="must-revalidate"/>
+		<meta http-equiv="Cache-Control" content="no-cache"/>
 	</head>
-	<body id="body_core">
-		<div class="mod-title">
-		<h1 class="center-title-noborder title-changed"><i><span>The best website in the world!</span></i></h1>
+	<body>
+		<div id="mod-title">
+		<h1 class="center-title-noborder" id="title-changed"><i><span>The best website in the world!</span></i></h1>
 		</div>
 		<p class="center">External links: <a href="/wtf/">Graphic design is my passion</a> | <a href="https://github.com/000yesnt/">My github page</a> | <a href="/misc/">Shitposting Zone</a><br>
 		<p class="center-title"></p>
@@ -41,7 +50,11 @@
 		
 		<!-- Show the cat. -->
 		<div class="center">
-			<img src="resources/images/mycat.jpg" width="50%" height="50%"/>
+			<img src="resources/images/mycat.jpg" width="50%" height="50%" id="cat"/>
+			<video id="notcat" style="display:none; margin: 0 auto; width: 400px;" controls>
+				<source src="resources/video/troll.mp4" type="video/mp4">
+				update your browser
+			</video>
 		</div>
 		
 		<p class="center-title"></p>

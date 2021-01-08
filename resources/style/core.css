@@ -1,27 +1,20 @@
 * {
 	font-family: Calibri, sans-serif;
 }
-#body_core {
+body {
   background-color: lightgray;
 }
 .center {
 	text-align: center;
 }
-.piccenter { /* Unused, broken */
-	text-align: center; 
-	display: block;
-}
+
 .center-title {
 	text-align: center;
 	font-weight: bold;
 	border-bottom-style: dotted;
 	border-width: 1px;
 }
-.center-title-nobold { /* Unused */
-	text-align: center;
-	border-bottom-style: dotted;
-	border-width: 1px;
-}
+
 .center-title-noborder {
 	text-align: center;
 	font-weight: bold;
@@ -31,14 +24,14 @@
 	border-width: 1px;
 }
 
-.mod-title h1.title-changed span {
+#mod-title h1#title-changed span {
 	content: "The best website in the world!";
 }
-.mod-title:hover h1.title-changed span {
+#mod-title:hover h1#title-changed span {
 	display: none;
 }
 
-.mod-title:hover h1.title-changed:after {
+#mod-title:hover h1#title-changed:after {
 	content: "The worst website in the world!";
 }
 
