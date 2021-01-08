@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hacked by Chinese!</title>
+	<!-- <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" /> -->
+</head>
+<body>
+	<h1>HELLO! Welcome to <a href="https://000yesnt.github.io/">http://yourmom.online!</a> Hacked By Chinese!</h1>
+	<p>After starting the video below, it'll start cycling between a list of shitty videos that I found</p>
+	<video src="chinatech1.mp4" width="640" height="480" id="myvideo" autoplay controls>
+		<source src="chinatech1.mp4" type="video/mp4">
+		Your browser is not powered by china tech
+	</video>
+	<script>
+	var vidElement = document.getElementById('myvideo');
+	var vidSources = [
+	  "chinatech1.mp4", 
+	  "chinatech2.mp4",
+	  "chinatech3.mp4",
+	  "chinatech4.mp4",
+	  "chinatech5.mp4",
+	  "chinatech6.mp4",
+	  "chinatech7.mp4"
+	  ];
+	var activeVideo = Math.floor((Math.random() * vidSources.length));
+	vidElement.src = vidSources[activeVideo];
+	vidElement.addEventListener('ended', function(e) {
+	  // update the active video index
+	  activeVideo = (++activeVideo) % vidSources.length;
+	  if(activeVideo === vidSources.length){
+	    activeVideo = 0;
+	  }
+
+	  // update the video source and play
+	  vidElement.src = vidSources[activeVideo];
+	  vidElement.play();
+	});
+	</script>
+</body>
+</html>
