@@ -1,0 +1,16 @@
+.pe {
+	position: relative;
+}
+
+.bru {
+	width: 50%;
+	height: auto;
+}
+
+.poo {
+	position: absolute;
+	bottom: 36%;
+	left: 5%;
+	width: 43%;
+	height: 40%;
+}
