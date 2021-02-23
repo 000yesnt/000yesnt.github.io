@@ -21,7 +21,12 @@
 "<img src=\"/resources/images/yesntsays/ass.png\">",
 "<img src=\"/resources/images/yesntsays/unknown.png\">",
 "i dont enjoy crisps innit",
-"fuck chick fil-a its not spelled right...."
+"fuck chick fil-a its not spelled right....",
+"sheeeeesh",
+"<iframe src=\"/misc/yesntsays/index.html\" title=\"Cool, right?\" width=\"800\" height=\"600\"></iframe>",
+"dragon knot simulator",
+"god i love trampolining",
+"\"Okay, so I'm not gay, but I'm swedish\""
 ];
 document.addEventListener("DOMContentLoaded", function() {
 	//window.fitText( document.getElementById("ok"),6);
