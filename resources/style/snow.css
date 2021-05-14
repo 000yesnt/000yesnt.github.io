@@ -1,0 +1,20 @@
+#snowflakeContainer2 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: none;
+}
+.snowflake2 {
+	position: fixed;
+	user-select: none;
+}
+#snowflakeContainer {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: none;
+}
+.snowflake {
+	position: fixed;
+	user-select: none;
+}

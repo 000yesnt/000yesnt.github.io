@@ -1,63 +1,62 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>000yesnt.github.io</title>
-		
-		<!-- Link our core css file -->
-		<link rel="stylesheet" type="text/css" href="/resources/style/core.css">
-		
-		<!-- (don't) Add jQuery and our core js file -->
-		<!-- script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
-		<script src="/resources/script/core.js?v=1"></script>
-		<script src="/resources/script/core_async.js?v=1" async></script>
-		
-		<!-- Metadata shit: Twitter -->
-		<meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="repo"/>
-        <meta name="twitter:description" content="placeholder dadadawdadawfafsdgsgaaf"/>
-		
-		<!-- Metadata shit: OpenGraph -->
-        <meta property="twitter:image" content="https://github.com/000yesnt/SiteContent/blob/master/soft.jpg?raw=true"/>
-        <meta property="og:url" content="https://000yesnt.github.io"/>
-        <meta property="og:title" content="cool and epic website"/>
-        <meta property="og:description" content="cool and epic"/>
-        <meta property="og:image" content="https://github.com/000yesnt/SiteContent/blob/master/soft.jpg?raw=true"/>
-		
-		<!-- Metadata shit: GNU Terry Pratchett -->
-		<meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
-
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="/resources/favicon.ico" type="image/x-icon">
-		<link rel="icon" href="/resources/favicon.ico" type="image/x-icon">
-
-		<!-- Site caching throws me off hard, so I'll just: -->
-		<meta http-equiv="Cache-Control" content="max-age=2400"/>
-		<meta http-equiv="Cache-Control" content="must-revalidate"/>
-	</head>
-	<body>
-		<div id="mod-title">
-		<h1 class="center-title-noborder" id="title-changed"><i><span>The best website in the world!</span></i></h1>
-		</div>
-		<p class="center">External links: <a href="/wtf/">Graphic design is my passion</a> | <a href="https://github.com/000yesnt/">My github page</a> | <a href="/misc/">Shitposting Zone</a><br>
-		<p class="center-title"></p>
-			
-		<div id="about-me">
-		<h2 class="center">hi, my name's yesnt</h3>
-		
-		<h2 class="center"> I code and game when I'm bored, and I have a cute cat. <br>
-		<span id="normal">(those are literally the only two intresting things about me)</span></h2>
-		
-		<!-- Show the cat. -->
-		<div class="center">
-			<img src="resources/images/mycat.jpg" width="50%" height="50%" id="cat"/>
-			<video id="notcat" style="display:none; margin: 0 auto; width: 400px;" controls>
-				<source src="resources/video/troll.mp4" type="video/mp4">
-				update your browser
+<head>
+	<title>catzone</title>
+	<link rel="stylesheet" type="text/css" href="/resources/style/snowtest.css">
+	<link rel="stylesheet" type="text/css" href="/resources/style/snow.css">
+	<div id="snowflakeContainer">
+		<span class="snowflake"><img src="/resources/images/c.png" width="32" height="32"></span>
+	</div>	
+	<div id="snowflakeContainer2">
+		<span class="snowflake2"><img src="/resources/images/h.svg" width="32" height="32"></span>
+	</div>
+	<!-- Credit: https://www.kirupa.com/html5/the_falling_snow_effect.htm - we need 2 copies to support 2 different files -->
+	<script src="/resources/script/snow2.js"></script>
+	<script src="/resources/script/snow.js"></script>
+	<script src="/resources/script/fart.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="dim"> 
+	<div id="flex-container">
+		<div class="test">
+			<h1>catZone</h1>
+			<div id="bwrap">
+				<p> Redirects: </p>
+				<a class="button button-visual" href="/index_old.html">Original index</a>
+				<div class="break"></div>
+				<a class="button button-visual" href="/misc/">misc</a>
+				<div class="break"></div>
+				<a class="button button-visual" href="https://static1.e926.net/data/8f/cf/8fcfd1afe218a6ad0f7541651a6b42aa.gif">wonderful</a>
+				<div class="break bordered"></div>
+				<button class="button disabled">FTP: Cat Archive </button>
+				<div class="break bordered"></div>
+				<button id="unmuteButton" class="button">Toggle audio</button>
+			</div>
+			<video id="aud" muted loop oncanplay="this.muted=true" width="0px">
+				<source src="/resources/audio/dababy.mp3" type="audio/mpeg">
+				nutsack
 			</video>
+			
+			<script>
+				unmuteButton.addEventListener('click', function() {
+					aud.volume = 0.1;
+					if(aud.muted == true){
+						document.getElementById("unmuteButton").innerHTML = "Audio <span style=\"color: #00ff00\">ON</span>";
+						aud.muted = false;
+						aud.play();
+					} else {
+						document.getElementById("unmuteButton").innerHTML = "Audio <span style=\"color: #ff0000\">OFF</span>";
+						aud.muted = true;
+					}
+					
+				});
+			</script>
+			<!--<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae metus elementum risus rutrum dignissim a at orci. Sed ut massa auctor, imperdiet leo in, consectetur nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec non enim id metus feugiat luctus ut nec nisi. Phasellus ante neque, rutrum sit amet blandit a, finibus sed libero. Donec pharetra dui vel urna sodales ullamcorper. Pellentesque ut vulputate enim. Proin sit amet malesuada ante, nec iaculis urna. Nunc quis felis nec urna porta commodo id a urna. </p> -->
 		</div>
-		
-		<p class="center-title"></p>
-		
-		<p class="center"> sorry if the website is a mess, I'm horrible at this<br>
-	</body>
-<html>
+	</div>
+</div>
+</body>
+</html>
