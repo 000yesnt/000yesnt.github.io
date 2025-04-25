@@ -1,0 +1,12 @@
+baseURL = 'https://000yesnt.github.io'
+languageCode = 'en-us'
+title = '000yesnt.github.io'
+theme = 'hugo-bearcub'
+
+enableRobotsTXT = true
+copyright = "yesnt (CC BY 4.0)"
+
+[params]
+title = "000yesnt.github.io"
+description = "my blog/infodump thing???"
+madeWith = "made with [Hugo](https://gohugo.io) and [Bear Cub](https://github.com/clente/hugo-bearcub)"
