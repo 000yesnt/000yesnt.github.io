@@ -10,3 +10,6 @@ copyright = "yesnt (CC BY 4.0)"
 title = "000yesnt.github.io"
 description = "my blog/infodump thing???"
 madeWith = "made with [Hugo](https://gohugo.io) and [Bear Cub](https://github.com/clente/hugo-bearcub)"
+
+[caches.images]
+dir = ":cacheDir/images"
