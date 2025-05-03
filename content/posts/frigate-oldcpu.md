@@ -9,6 +9,7 @@ If you try to run the official [Frigate](https://frigate.video/) docker image on
 This is a guide that covers how to build and deploy such version, as well as bugs that I found while testing and my solution for them.
 
 # Building
+
 **FYI:** I push prebuilt images to [Docker Hub](https://hub.docker.com/r/000yesnt/frigate-oldcpu) to save people's time. Versions 0.15.1 and newer should come with attestations enabled. I recommend you use them unless your hardware is somehow incompatible.
 
 ```shell
@@ -22,16 +23,23 @@ docker buildx build -t frigate-oldcpu:0.15.1 -t frigate-oldcpu .
 ```
 
 # Deploying: Docker Compose
+
 Deploy it in the same way as you would a normal Frigate container - just switch the image tag to the one you just built.
 
-If you're using my prebuilt image, use ``000yesnt/frigate-oldcpu``
+If you're using my prebuilt image, use `000yesnt/frigate-oldcpu`
+
+## Object Detection
+
+CPUs this old are unlikely to handle object detection for more than one or two cameras. I strongly recommend getting a Coral or [offloading the processing to a more powerful computer in LAN.](https://docs.frigate.video/configuration/object_detectors#deepstack--codeprojectai-server-detector)
 
 # Deploying: Docker Swarm
+
 There's a weird and rare bug on all frigate-oldcpu images. Sometimes, the container will freeze and its RAM usage will explode, slowing down the server until the OOM killer does something.
 
 I chose to mitigate this bug by deploying the container in a single-node swarm. Unlike a normal deployment, when a container in a swarm is unhealthy, Docker will automatically recreate it. Also, memory limits only seem to work in Swarm mode. In normal Compose mode, they're completely ignored.
 
 You will need to make a few modifications to your Docker Compose file:
+
 ```yaml
 services:
   frigate:
@@ -43,7 +51,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /path/to/your/config:/config
       - /path/to/your/storage:/media/frigate
-      - type: tmpfs  # shm_size isn't compatible with Swarm configs
+      - type: tmpfs # shm_size isn't compatible with Swarm configs
         target: /dev/shm
         tmpfs:
           size: 256000000 #256m
@@ -57,8 +65,8 @@ services:
       mode: global
       placement:
         constraints:
-          - node.role == manager  # Makes sure only the master node has Frigate up
+          - node.role == manager # Makes sure only the master node has Frigate up
       resources:
         limits:
-          memory: "1G"  # Limits Frigate's RAM usage to prevent the aforementioned bug
+          memory: "1G" # Limits Frigate's RAM usage to prevent the aforementioned bug
 ```
