@@ -127,7 +127,7 @@ In `loadBus` there are calls to `__android_log_print`, which prints data to logc
 
 ```
 05-05 15:12:35.315  9555  9642 D C_LOG   : ToCppBool>>>:1
-05-05 15:12:35.366  9555  9642 D C_LOG   : requestUrl>>>decode_net:{"urlB":"hxxps://4gae4.com?ch=22925&sd=6","appsflyer_key":"","oNameListarmeabi-v7a":["cribo.mp4"],"jsCodes":["javascript: window.jsBridge = window.jsBridge || {};","javascript: window.jsBridge.postMessage = function(a,b){window.subscription.epistaxis(a,b);};"],"jsInstance":"subscription","custom_event":[{"event_ [... truncated ...]
+05-05 15:12:35.366  9555  9642 D C_LOG   : requestUrl>>>decode_net:{"urlB":"hxxps[://]4gae4[.]com?ch=22925&sd=6","appsflyer_key":"","oNameListarmeabi-v7a":["cribo.mp4"],"jsCodes":["javascript: window.jsBridge = window.jsBridge || {};","javascript: window.jsBridge.postMessage = function(a,b){window.subscription.epistaxis(a,b);};"],"jsInstance":"subscription","custom_event":[{"event_ [... truncated ...]
 05-05 15:12:35.367  9555  9642 D C_LOG   : fileList : oFileListx86_64 ---- nameList ： oNameListx86_64
 ```
 
