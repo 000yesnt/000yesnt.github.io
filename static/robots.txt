@@ -1,0 +1,4 @@
+Sitemap: https://000yesnt.github.io/sitemap.xml
+
+User-agent: *
+Disallow:
