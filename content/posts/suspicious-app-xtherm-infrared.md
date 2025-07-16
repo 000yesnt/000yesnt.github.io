@@ -1,6 +1,6 @@
 +++
 title = 'Analyzing a companion app for a cheap Chinese IR camera'
-date = 2025-07-16T19:31:05-03:00
+date = 2025-07-16T09:31:05-03:00
 draft = false
 +++
 
